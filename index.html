@@ -27,6 +27,8 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1406754490137792');
 fbq('track', 'PageView');
 fbq('track', '1min');
+fbq('track', '10min');
+fbq('track', '23min');
 
 </script>
 
@@ -35,6 +37,10 @@ fbq('track', '1min');
 src="https://www.facebook.com/tr?id=1406754490137792&ev=PageView&noscript=1"/>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1406754490137792&ev=1min&noscript=1"/>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1406754490137792&ev=10min&noscript=1"/>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1406754490137792&ev=23min&noscript=1"/>
 </noscript>
 
 <script>
@@ -43,6 +49,22 @@ src="https://www.facebook.com/tr?id=1406754490137792&ev=1min&noscript=1"/>
       tempo: 60  // Rastreie 1 minuto (60 segundos)
     });
   }, 60000); // Defina o tempo em milissegundos
+</script>
+
+<script>
+  setTimeout(function() {
+    fbq('track', '10min', {
+      tempo: 60  // Rastreie 1 minuto (60 segundos)
+    });
+  }, 600000); // Defina o tempo em milissegundos
+</script>
+
+<script>
+  setTimeout(function() {
+    fbq('track', '23min', {
+      tempo: 60  // Rastreie 1 minuto (60 segundos)
+    });
+  }, 1380000); // Defina o tempo em milissegundos
 </script>
 
 <!-- End Meta Pixel Code -->
